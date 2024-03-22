@@ -18,7 +18,7 @@ namespace FridayProject
             // see https://aka.ms/applicationconfiguration.
 
             var services = new ServiceCollection();
-            services.AddTransient<ProductRegistration>();
+            services.AddTransient<SignIn>();
             //services.AddTransient<MyDBContext>();
             //services.AddDbContext<MyDBContext>(options =>
             //{
@@ -29,7 +29,7 @@ namespace FridayProject
 
             using ServiceProvider serviceProvider = services.BuildServiceProvider();
           
-            var form = serviceProvider.GetRequiredService<ProductRegistration>();
+            var form = serviceProvider.GetRequiredService<SignIn>();
             Application.Run(form);
 
         }

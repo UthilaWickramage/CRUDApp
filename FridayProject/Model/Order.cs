@@ -10,5 +10,7 @@ namespace FridayProject.Model
     {
         public int Id { get; set; }
         public double Total { get; set; }
+
+        public List<Product> Products { get; set; }
     }
 }
